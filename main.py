@@ -146,7 +146,7 @@ async def support_info(message: Message):
         "Админ: @kx_de (пиши напрямую)\n"
         "Канал с анонсами: https://t.me/TurnirrBrawllStars\n\n"
         "Правила:\n"
-        "https://telegra.ph/Pravila-turnirov-02-13-4"•\n"
+        "https://telegra.ph/Pravila-turnirov-02-13-4\n"
         
     
     )
@@ -408,4 +408,5 @@ async def main():
 
 if __name__ == "__main__":
     asyncio.run(main())
+
 
