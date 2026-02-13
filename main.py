@@ -91,7 +91,7 @@ async def admin_panel(message: Message):
     await message.answer("Админ-панель:", reply_markup=get_admin_menu())
 
 # Создать турнир
-@dp.message(lambda m: m.text == "Создать турнир" and m.from_user.id in ADMIN_IDS, state='*')
+@dp.message(lambda m: m.text == "Создать турнир" and m.from_user.id in ADMIN_IDS
 async def start_create(message: Message, state: FSMContext):
     await state.set_state(CreateTournament.game)
     kb = ReplyKeyboardMarkup(resize_keyboard=True, row_width=2)
@@ -191,3 +191,4 @@ async def main():
 
 if __name__ == "__main__":
     asyncio.run(main())
+
